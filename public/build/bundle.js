@@ -12493,11 +12493,12 @@ module.exports = Cancel;
         name: this.todo,
         done: 0
       };
-      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("http://localhost:5000/api/questions", this.question).then(response => {
+      __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post("/api/questions", this.question).then(response => {
         console.log(response);
         this.$router.push("/");
       }).catch(error => {
         console.log(error);
+        alert("Error. Did you fill out all fields?");
       });
     }
   }
@@ -12775,6 +12776,7 @@ module.exports = Cancel;
         this.$router.push("/");
       }).catch(error => {
         console.log(error);
+        alert("Error. Did you fill out all fields?");
       });
     }
   }
@@ -17054,7 +17056,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_CreateQuestions_vue__ = __webpack_require__(13);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7c91917b_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_CreateQuestions_vue__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_79cb947b_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_CreateQuestions_vue__ = __webpack_require__(45);
 var normalizeComponent = __webpack_require__(1)
 /* script */
 
@@ -17071,7 +17073,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_CreateQuestions_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7c91917b_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_CreateQuestions_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_79cb947b_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_CreateQuestions_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -17098,7 +17100,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_EditQuestions_vue__ = __webpack_require__(14);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1cf8d35c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_EditQuestions_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_73b9e850_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_EditQuestions_vue__ = __webpack_require__(47);
 var normalizeComponent = __webpack_require__(1)
 /* script */
 
@@ -17115,7 +17117,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_EditQuestions_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1cf8d35c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_EditQuestions_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_73b9e850_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_EditQuestions_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,

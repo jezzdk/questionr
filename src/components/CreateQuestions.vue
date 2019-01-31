@@ -255,13 +255,14 @@ export default {
         done: 0
       };
       axios
-        .post("http://localhost:5000/api/questions", this.question)
+        .post("/api/questions", this.question)
         .then(response => {
           console.log(response);
           this.$router.push("/");
         })
         .catch(error => {
           console.log(error);
+          alert("Error. Did you fill out all fields?");
         });
     }
   }

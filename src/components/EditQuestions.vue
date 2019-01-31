@@ -266,6 +266,7 @@ export default {
         })
         .catch(error => {
           console.log(error);
+          alert("Error. Did you fill out all fields?");
         });
     }
   }
